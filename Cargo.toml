@@ -1,0 +1,24 @@
+[package]
+name = "orbsat"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+vst = "*"
+rand = "*"
+fundsp = "*"
+num-derive = "0.3"
+num-traits = "0.2"
+log = "0.4"
+simplelog = "0.11"
+log-panics = "2"
+dirs = "*"
+egui = "0.15"
+egui-baseview = {git = "https://github.com/BillyDM/egui-baseview" }
+baseview = { git = "https://github.com/RustAudio/baseview.git", rev = "f6e99e9aa6f5aeb6b721cb05e4d882a51d995909" }
+raw-window-handle = "0.3"
+processing = "*"
+wmidi = "4"
